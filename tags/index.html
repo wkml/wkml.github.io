@@ -12,7 +12,7 @@
 var verify = 'false' == 'true';
 var record_ip = 'false' == 'true';
 var GUEST_INFO = ['nick','mail','link'];
-var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+var guest_info = 'nick'.split(',').filter(function(item){
   return GUEST_INFO.indexOf(item) > -1
 });
 guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
